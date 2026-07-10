@@ -37,8 +37,6 @@ CREATE TABLE tickets (
     description TEXT, 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     status VARCHAR(50) NOT NULL
-
-
 );
 
 INSERT INTO users (first_name, last_name, email, role)
@@ -48,6 +46,36 @@ VALUES
 ('Jack', 'Polifka', 'jack.polifka@college.edu', 'IT Technician'), 
 ('Lisa', 'Admin', 'lisa.admin@collge.edu', 'IT Admin');
 
-SELECT *
-FROM users;
+INSERT INTO categories (category_name)
+VALUES
+('Hardware'),
+('Software'),
+('Network'),
+('Account Access'),
+('Classroom Technology');
+
+INSERT INTO subcategories (category_id, subcategory_name)
+VALUES
+(1, 'Laptop'),
+(1, 'Printer'),
+(2, 'Slack'),
+(2, 'Webex'),
+(3, 'Wifi'),
+(3, 'VPN'),
+(4, 'Password Reset'),
+(4, 'Account Locked'),
+(5, 'Projector'),
+(5, 'Smart Board');
+
+INSERT INTO tickets (caller_id, subcategory_id, short_description, description, status)
+VALUES
+(1, 7, 'Password Reset', 'Student cannot log into their account because they forgot their password', 'Open');
+
+
+
+
+
+
+
+
 
