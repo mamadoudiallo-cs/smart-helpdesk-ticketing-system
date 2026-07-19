@@ -1,14 +1,17 @@
 
-# College Help Desk Ticketing System
+# Smart HelpDesk Ticketing System
 
 ## Project Overview
-This project is a SQL-based help desk ticketing system inspired by entreprise platforms like ServiceNow.
 
-The goal of this project is to learn: 
+This project is a SQL-based Smart Helpdesk Ticketing System inspired by enterprise service management platforms like ServiceNow. It is designed to demonstrate software engineering concepts, including relational database design, SQL development, data integrity, and structured ticket management workflows.
+
+The goal of this project is to learn:
+
 - Relational database design
 - SQL schema creation
-- Foreign keys and table relationships
-- Lookup tables VS Transactional tables
+- Primary and foreign key relationships
+- Database normalization
+- Lookup tables vs. transactional tables
 - Backend system architecture
 
 ## Technologies Used
@@ -18,31 +21,26 @@ The goal of this project is to learn:
 - Git
 - GitHub
 
-## System context
-
-This project is designed as a college IT Help Desk Ticketing System. The reason why I decided to work on this project is because it connects well with my background in IT, and my experience with being a college student at Western Governors University.
-The system will be used by college students, faculty staff, IT technicians, and IT administrators to create, track, update, assign, and resolve technology support tickets.
+## System Context
+This project is designed as a Smart Helpdesk Ticketing System that can be adapted for organizations such as businesses, universities, healthcare providers, or government agencies. It allows users to create, assign, prioritize, track, and resolve support tickets through a structured workflow.
+The current implementation uses a college helpdesk environment as the initial case study, demonstrating software engineering and database design principles applicable across many industries.
 
 ## User Roles
-
-- Student: can login to create tickets and to view their own ticket status.
-- Faculty staff: can create tickets and view their own ticket status just like the students.
-- IT technician: can login to view assigned tickets, update ticket status, and add comments.
+- Student: can log in to create tickets and to view their own ticket status.
+- Faculty/Staff: can create tickets and view their own ticket status just like the students.
+- IT Technician: can log in to view assigned tickets, update ticket status, and add comments.
 - IT Admin: Can manage users, categories, assignments, and reporting.
 
-## Uer Actions
-
+## User Actions
 - User logs in to securely access the system based on their role. 
-- User creates and submit tickets for a specific issue.
-- User select category and subcategory .
-- User describes the issue by giving specific description about the information about the problem they are facing.
-- IT technician views the ticket submited by the users.
-- IT technician commment on the ticket by creating a history of why they closed the ticket, while troubleshooting, waiting for a user response, when escalating,and resolving.
+- User creates and submits tickets for a specific issue.
+- User selects a category and subcategory.
+- User describes the issue by giving a specific description of the problem they are facing.
+- The IT technician views the ticket submitted by the users.
+- IT technician comments on the ticket by creating a history of why they closed the ticket, while troubleshooting, waiting for a user response, when escalating, and resolving.
 - IT technician changes the status of the ticket from open, in progress, pending, resolved, and closed.
-- IT Techinician assigns or reassign the ticket based on the level or the type of issue they are facing.
-- User check on the current status of the ticket, like technician comments, assignment information, resolution details.
-
-
+- The IT Technician assigns or reassigns the ticket based on the level or the type of issue they are facing.
+- User check on the current status of the ticket, like technician comments, assignment information, and resolution details.
 
 ## Current Database Tables
 - users
