@@ -1,5 +1,4 @@
-
-# Smart HelpDesk Ticketing System
+# Smart Help Desk Ticketing System
 
 ## Project Overview
 
